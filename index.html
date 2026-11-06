@@ -36,8 +36,8 @@
         <div class="stage-media" data-scene="pyramid">
           <img
             id="hero-image"
-            src="assets/pyramid/cover.webp"
-            alt="피라미드 건설 게임의 개발 빌드 실행 화면"
+            src="assets/pyramid/river-cover.webp"
+            alt="게임에서 촬영한 두 장면. 석재를 실은 화물선과 사막을 가로지르는 강줄기"
             fetchpriority="high"
           />
         </div>
@@ -48,7 +48,7 @@
           </div>
           <h2 id="hero-title" aria-live="polite" aria-atomic="true">피라미드 건설&nbsp;게임</h2>
           <p id="hero-summary">
-            돌을 채집하고 나르고 배치하는 과정을 직접 플레이하는 3D 건설 게임.
+            강을 따라 석재를 운반해 피라미드를 쌓는 3D 건설 게임.
           </p>
           <div class="stage-actions">
             <a class="feature-link" href="#detail"
@@ -68,7 +68,7 @@
         </div>
         <div class="cards">
           <a class="card" data-key="pyramid" href="#pyramid"
-            ><span class="thumb pyramid"><img src="assets/pyramid/cover.webp" alt="" /></span
+            ><span class="thumb pyramid"><img src="assets/pyramid/river-cover.webp" alt="" /></span
             ><span class="card-caption"
               ><strong>피라미드 건설 게임</strong><small>3D 게임</small></span
             ></a
@@ -82,7 +82,7 @@
           >
           <a class="card" data-key="design-farm" href="#design-farm"
             ><span class="thumb design-farm"
-              ><img src="assets/design-farm/sculpture-study.webp" alt="" /></span
+              ><img src="assets/design-farm/exhibit.webp" alt="" /></span
             ><span class="card-caption"
               ><strong lang="en">Design Farm</strong><small>3D · AR 전시 웹</small></span
             ></a
@@ -101,9 +101,9 @@
           data-project
           data-type="Unreal Engine"
           data-state="개발 중"
-          data-picture="assets/pyramid/cover.webp"
-          data-alt="피라미드 건설 게임의 개발 빌드 실행 화면"
-          data-summary="돌을 채집하고 나르고 배치하는 과정을 직접 플레이하는 3D 건설 게임."
+          data-picture="assets/pyramid/river-cover.webp"
+          data-alt="게임에서 촬영한 두 장면. 석재를 실은 화물선과 사막을 가로지르는 강줄기"
+          data-summary="강을 따라 석재를 운반해 피라미드를 쌓는 3D 건설 게임."
         >
           <div class="article-heading">
             <p>개인 게임 프로젝트 · Unreal Engine 5</p>
@@ -115,44 +115,24 @@
                 controls
                 playsinline
                 preload="none"
-                poster="assets/pyramid/gameplay-poster.webp"
-                aria-label="빈손에서 도구를 선택하고 채석·벌목하는 시연"
-                src="assets/pyramid/gameplay.mp4"
+                poster="assets/pyramid/river-poster.webp"
+                aria-label="피라미드 건설 게임의 화물선 운항 시연"
+                src="assets/pyramid/river.mp4"
               ></video>
-              <figcaption>개발 빌드 · 도구 선택, 채석과 벌목 · 38초, 무음</figcaption>
+              <figcaption>강줄기에서 부두로, 석재를 실은 화물선의 출항 · 14초, 무음</figcaption>
             </figure>
             <div class="text-record">
-              <h3>돌 한 덩이가 건설 재료가 되기까지</h3>
+              <h3>채석장에서 부두까지</h3>
               <p>
-                석재를 채집해 운반하고 건설 위치에 배치하는 싱글플레이를 먼저 만들고 있습니다.
-                맨손과 도구를 든 상태를 나누고, 이동에서 채석으로 자연스럽게 이어지는 동작을
-                정했습니다.
+                채석한 돌을 부두로 가져가 배에 싣습니다. 플레이어가 직접 승선해 배를 띄우면
+                배가 물살을 따라 움직이고, 키를 조작해 항로를 따라갈 수 있습니다.
               </p>
-              <h3>지금 막힌 곳은 3D 애니메이션입니다</h3>
+              <h3>도착한 석재로 피라미드 쌓기</h3>
               <p>
-                곡괭이를 들고 걷다가 내리칠 때 손과 손잡이, 어깨가 함께 움직여야 합니다. 여러
-                방향에서 자세를 확인하며 작업 중이고, 다음 방법으로 로컬 AI를 활용한 동작 제작과
-                모션캡처를 검토하고 있습니다.
+                목적지에 정박한 뒤 석재를 내려 가공하고, 건설 격자에 한 단씩 놓습니다. 재료를
+                구하는 시점부터 건설에 쓰이는 순간까지 직접 조작하는 싱글플레이를 만들고 있습니다.
               </p>
             </div>
-          </div>
-          <div class="field-stills">
-            <figure class="media-card">
-              <img
-                src="assets/pyramid/boat.webp"
-                loading="lazy"
-                alt="캐릭터가 석재를 실은 화물선에 올라탄 개발 빌드 화면"
-              />
-              <figcaption>석재 수운 · 화물선 운항 시험</figcaption>
-            </figure>
-            <figure class="media-card">
-              <img
-                src="assets/pyramid/motion.webp"
-                loading="lazy"
-                alt="캐릭터가 곡괭이를 들었을 때의 자세를 확인한 개발 화면"
-              />
-              <figcaption>동작 검토 · 곡괭이를 든 자세</figcaption>
-            </figure>
           </div>
         </article>
         <article
@@ -224,6 +204,47 @@
               <figcaption>내 담당 · 업적 화면과 메뉴 복귀</figcaption>
             </figure>
           </div>
+          <section class="review-section" aria-labelledby="review-heading">
+            <h3 id="review-heading">팀원과 주고받은 코드 리뷰</h3>
+            <div class="review-shots">
+              <figure class="media-card">
+                <a class="review-image" href="assets/invaders/collab-acceptance.webp"
+                   target="_blank" rel="noopener" aria-label="업적 화면 검수 캡처 크게 보기">
+                  <img src="assets/invaders/collab-acceptance.webp" loading="lazy"
+                       alt="팀원이 업적 화면 진입과 Esc 복귀를 여러 번 확인하고 승인한 GitHub 리뷰" />
+                </a>
+                <figcaption>
+                  <strong>내 코드를 팀원이 검수</strong>
+                  <span>팀원이 내가 만든 업적 화면을 열고 Esc로 돌아오는 동작을 여러 번 확인한 뒤 승인했습니다.</span>
+                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/13#pullrequestreview-5260586393">검수 대화 원문 ↗</a>
+                </figcaption>
+              </figure>
+              <figure class="media-card">
+                <a class="review-image" href="assets/invaders/collab-playtest.webp"
+                   target="_blank" rel="noopener" aria-label="일시정지 재현 조건 캡처 크게 보기">
+                  <img src="assets/invaders/collab-playtest.webp" loading="lazy"
+                       alt="발사 키를 누른 상태와 뗀 상태에서 일시정지 결과가 달라진다는 내 리뷰" />
+                </a>
+                <figcaption>
+                  <strong>직접 재현한 오류 공유</strong>
+                  <span>발사 키를 놓고 P를 누르면 멈추지만, 누른 채로는 멈추지 않았습니다. 팀원이 따라 할 수 있게 두 입력 순서를 리뷰에 적었습니다.</span>
+                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/74#pullrequestreview-5512052827">재현 조건 원문 ↗</a>
+                </figcaption>
+              </figure>
+              <figure class="media-card">
+                <a class="review-image" href="assets/invaders/collab-decision.webp"
+                   target="_blank" rel="noopener" aria-label="팀 논의 후 승인 결정 캡처 크게 보기">
+                  <img src="assets/invaders/collab-decision.webp" loading="lazy"
+                       alt="발견한 문제는 담당 팀별로 추적하고 코드 동기화는 승인하겠다고 남긴 내 후속 리뷰" />
+                </a>
+                <figcaption>
+                  <strong>팀 논의 후 처리 방향 결정</strong>
+                  <span>네 가지 오류는 담당 팀에 전달해 따로 추적하기로 했습니다. 그 합의를 리뷰에 남기고 코드 동기화를 승인했습니다.</span>
+                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/74#pullrequestreview-5517094558">후속 결정 원문 ↗</a>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
           <details class="extra">
             <summary>플레이 전후 화면과 6초 시연 보기</summary>
             <div class="compare">
@@ -263,8 +284,8 @@
           data-project
           data-type="Three.js · WebXR"
           data-state="캡스톤 개발 중"
-          data-picture="assets/design-farm/sculpture-study.webp"
-          data-alt="디자인팜 웹에서 렌더링한 석조 조각 스터디 화면"
+          data-picture="assets/design-farm/exhibit.webp"
+          data-alt="디자인팜의 시연 작품 세 점. 푸른 추상화, 3D 청동 조각, 황토빛 풍경화"
           data-summary="예술대학생의 작품을 실제 치수로 가상 전시실에 놓아 보고, AR로 내 공간에 배치하는 웹을 개발하고 있습니다."
         >
           <div class="article-heading">

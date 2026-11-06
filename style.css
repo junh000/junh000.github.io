@@ -182,7 +182,7 @@ footer a:hover {
   background: #e9e9e7;
 }
 .stage-media[data-scene="design-farm"] > img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .stage-copy {
   display: flex;
@@ -740,24 +740,53 @@ footer a:first-of-type {
     transition: none !important;
   }
 }
-.field-stills {
-  margin-top: 22px;
+.review-section {
+  margin: 32px 0;
+}
+.review-section h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  letter-spacing: -0.045em;
+}
+.review-shots {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 16px;
 }
-.field-stills .media-card > img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: contain;
-  background: #e8e1cd;
+.review-image {
+  display: block;
+  padding: 8px;
+  background: #f0f1ee;
+  cursor: zoom-in;
 }
-@media (max-width: 640px) {
-  .field-stills {
-    gap: 8px;
-  }
-  .field-stills figcaption {
-    padding: 7px;
-    font-size: 11px;
+.review-image:focus-visible {
+  outline-offset: -4px;
+}
+.review-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.review-shots figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 13px 16px 15px;
+  font-size: 13px;
+}
+.review-shots figcaption strong {
+  color: var(--ink);
+  font-size: 16px;
+}
+.review-shots figcaption a {
+  width: fit-content;
+  margin-top: 3px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 800px) {
+  .review-shots {
+    grid-template-columns: 1fr;
   }
 }

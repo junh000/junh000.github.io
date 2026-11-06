@@ -790,3 +790,118 @@ footer a:first-of-type {
     grid-template-columns: 1fr;
   }
 }
+
+.photo-gallery {
+  margin: 32px 0 20px;
+}
+.photo-gallery h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  letter-spacing: -0.045em;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.photo-grid a {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fffefa;
+  cursor: zoom-in;
+}
+.photo-grid a:hover {
+  border-color: #747c66;
+}
+.photo-grid a::after {
+  content: "⤢";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: rgb(23 27 23 / 82%);
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  pointer-events: none;
+}
+.photo-grid img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: contain;
+  background: #e9e7df;
+}
+.photo-grid span {
+  display: block;
+  padding: 9px 13px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#invaders .photo-grid img {
+  aspect-ratio: 1.2;
+  background: #0a0b0b;
+  image-rendering: pixelated;
+}
+#sobok .photo-grid img {
+  aspect-ratio: 1.2;
+  background: #e5e4db;
+}
+#photo-viewer {
+  width: min(960px, calc(100vw - 28px));
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 1px solid #585c50;
+  border-radius: 12px;
+  background: #1c1e1a;
+  color: #fbfbf4;
+}
+#photo-viewer::backdrop {
+  background: rgb(13 15 12 / 82%);
+}
+html:has(#photo-viewer[open]) {
+  overflow: hidden;
+}
+#expanded-photo {
+  width: 100%;
+  height: min(65dvh, 690px);
+  object-fit: contain;
+  background: #111310;
+}
+.viewer-bar,
+.viewer-arrows {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.viewer-bar {
+  justify-content: space-between;
+  padding: 8px 14px;
+  font-size: 14px;
+}
+.viewer-bar button {
+  min-width: 40px;
+  min-height: 40px;
+  border: 1px solid #73796b;
+  border-radius: 8px;
+  background: #2d3029;
+  color: inherit;
+}
+.viewer-bar button:hover {
+  background: #464c40;
+}
+@media (max-width: 640px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .photo-grid img {
+    max-height: 260px;
+  }
+  .viewer-bar {
+    padding: 6px 10px;
+  }
+}

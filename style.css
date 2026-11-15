@@ -467,6 +467,44 @@ figcaption {
   font-size: 12px;
   color: var(--muted);
 }
+.server-access {
+  margin-top: 18px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.server-url {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.text-record .server-cutoff,
+.text-record .server-hours p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.server-cutoff {
+  font-weight: 600;
+}
+.server-hours {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.server-hours summary {
+  cursor: pointer;
+}
+.server-hours dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 12px;
+  margin: 10px 0 0;
+}
+.server-hours dd {
+  margin: 0;
+}
 .media-credit a {
   text-decoration: underline;
   text-underline-offset: 2px;

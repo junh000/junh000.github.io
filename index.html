@@ -10,8 +10,8 @@
     />
     <title>한준혁 — 개발 포트폴리오</title>
     <link rel="icon" href="mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="portfolio.js" defer></script>
+    <link rel="stylesheet" href="style.css?v=20261115-plain" />
+    <script src="portfolio.js?v=20261115-plain" defer></script>
   </head>
   <body>
     <a class="skip" href="#projects">프로젝트로 건너뛰기</a>
@@ -30,7 +30,6 @@
     <main class="wrap">
       <div class="intro">
         <h1 lang="en">Project archive<span>.</span></h1>
-        <p>만들고, 확인하고, 다시 시도합니다.</p>
       </div>
       <section class="stage" aria-label="선택한 프로젝트 미리보기">
         <div class="stage-media" data-scene="pyramid">
@@ -47,9 +46,6 @@
             ><span id="hero-type">Unreal Engine</span>
           </div>
           <h2 id="hero-title" aria-live="polite" aria-atomic="true">피라미드 건설&nbsp;게임</h2>
-          <p id="hero-summary">
-            자원을 모으고, 배로 운반하고, 건설하는 3D 게임.
-          </p>
           <div class="stage-actions">
             <a class="feature-link" href="#detail"
               >개발 기록 보기 <span aria-hidden="true">↘</span></a
@@ -103,7 +99,6 @@
           data-state="개발 중"
           data-picture="assets/pyramid/boat-dock-20261115.webp"
           data-alt="피라미드 게임에서 배에 올라 돛을 펼친 플레이어와 선착장"
-          data-summary="자원을 모으고, 배로 운반하고, 건설하는 3D 게임."
         >
           <div class="article-heading">
             <p>개인 기획·기능 검토 · Unreal Engine 5 · 2026.11.15</p>
@@ -116,11 +111,10 @@
               <figcaption>자재를 소비해 완성한 주택 · 11월 15일 실제 실행</figcaption>
             </figure>
             <div class="text-record">
-              <h3>자원에서 건설까지, 하나의 플레이</h3>
-              <p>획득·가공·운송·건설·생활 시스템을 연결하는 개인 프로젝트.</p>
-              <h3>막힌 동작에서 다음 방법으로</h3>
-              <p>손과 도구의 접점이 어긋났습니다. 외부 모션을 비교해 실제 행동에 연결했습니다.</p>
-              <p class="verification"><strong>다음 시도</strong>손·도구 접점과 동작 전환 개선. 모션 품질 검토는 계속 진행 중.</p>
+              <h3>구현 기능</h3>
+              <p>자원 획득·가공·운송·건설·생활 시스템.</p>
+              <h3>애니메이션</h3>
+              <p>손·도구 접점 불일치로 외부 모션 비교·적용. 접점·전환 보완 중.</p>
             </div>
           </div>
           <section class="photo-gallery" aria-labelledby="pyramid-photos">
@@ -174,7 +168,6 @@
           data-state="팀 개발 중"
           data-picture="assets/invaders/after-gameplay.png"
           data-alt="Space Invaders 개선판에서 적을 향해 발사하는 플레이 화면"
-          data-summary="9명이 스프린트로 확장한 Java 슈팅 게임. 업적 기능과 플레이 검수를 맡았습니다."
         >
           <div class="article-heading">
             <p>Hello World · Java · 9명 · 최신판 2026.11.15 확인</p>
@@ -204,20 +197,20 @@
           </div>
           <div class="record-grid reverse">
             <div class="text-record">
-              <h3>업적 화면에서 필터까지</h3>
+              <h3>담당 기능</h3>
               <p>화면·메뉴 복귀, 해금 개수, 미해금 필터 담당. 해금 규칙은 팀원 담당.</p>
-              <h3>오류를 재현하고, 팀과 풀기</h3>
-              <p>6개 항목을 직접 플레이해 오류 4건을 재현. 입력 순서를 공유하고 담당 팀과 처리 방향에 합의했습니다.</p>
-              <p class="verification"><strong>애자일 협업</strong>주간 스프린트 · GitHub 리뷰 · Slack · Jira · Notion</p>
+              <h3>플레이 검수</h3>
+              <p>6개 항목 검수·오류 4건 재현. 입력 순서 공유 및 담당 팀별 추적 합의.</p>
+              <p class="verification"><strong>협업 방식</strong>애자일 주간 스프린트 · GitHub 리뷰 · Slack · Jira · Notion</p>
               <div class="code-links">
-                <a class="text-link" href="https://github.com/eoieiie/hello-world-invaders/pull/23"
-                  >미해금 필터 <span aria-hidden="true">↗</span></a
+                <a class="text-link evidence-link" href="assets/invaders/evidence-filter.webp" target="_blank" rel="noopener"
+                  >필터 변경 캡처 <span aria-hidden="true">↗</span></a
                 >
-                <a class="text-link" href="https://github.com/eoieiie/hello-world-invaders/pull/11"
-                  >업적 개수 <span aria-hidden="true">↗</span></a
+                <a class="text-link evidence-link" href="assets/invaders/evidence-count.webp" target="_blank" rel="noopener"
+                  >개수 표시 캡처 <span aria-hidden="true">↗</span></a
                 >
-                <a class="text-link" href="https://github.com/eoieiie/Invaders-SDP-23621/pull/74"
-                  >오류 재현 <span aria-hidden="true">↗</span></a
+                <a class="text-link evidence-link" href="assets/invaders/collab-playtest.webp" target="_blank" rel="noopener"
+                  >오류 재현 캡처 <span aria-hidden="true">↗</span></a
                 >
               </div>
             </div>
@@ -262,7 +255,7 @@
             </div>
           </section>
           <section class="review-section" aria-labelledby="review-heading">
-            <h3 id="review-heading">문제 발견 → 재현 → 팀 합의</h3>
+            <h3 id="review-heading">코드 리뷰 캡처</h3>
             <div class="review-shots">
               <figure class="media-card">
                 <a class="review-image" href="assets/invaders/collab-acceptance.webp"
@@ -271,9 +264,9 @@
                        alt="팀원이 업적 화면 진입과 Esc 복귀를 여러 번 확인하고 승인한 GitHub 리뷰" />
                 </a>
                 <figcaption>
-                  <strong>담당 기능을 팀원이 검수</strong>
+                  <strong>업적 화면 검수</strong>
                   <span>업적 진입·Esc 복귀를 반복 확인한 뒤 승인.</span>
-                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/13#pullrequestreview-5260586393">검수 대화 원문 ↗</a>
+                  <a class="evidence-link" href="assets/invaders/collab-acceptance.webp" target="_blank" rel="noopener">검수 캡처 보기 ↗</a>
                 </figcaption>
               </figure>
               <figure class="media-card">
@@ -283,9 +276,9 @@
                        alt="발사 키를 누른 상태와 뗀 상태에서 일시정지 결과가 달라진다는 내 리뷰" />
                 </a>
                 <figcaption>
-                  <strong>직접 재현한 오류 공유</strong>
+                  <strong>일시정지 오류 재현</strong>
                   <span>발사 중 일시정지 오류를 입력 순서로 재현.</span>
-                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/74#pullrequestreview-5512052827">재현 조건 원문 ↗</a>
+                  <a class="evidence-link" href="assets/invaders/collab-playtest.webp" target="_blank" rel="noopener">재현 조건 캡처 보기 ↗</a>
                 </figcaption>
               </figure>
               <figure class="media-card">
@@ -295,9 +288,9 @@
                        alt="발견한 문제는 담당 팀별로 추적하고 코드 동기화는 승인하겠다고 남긴 내 후속 리뷰" />
                 </a>
                 <figcaption>
-                  <strong>팀 논의 후 처리 방향 결정</strong>
+                  <strong>후속 처리 합의</strong>
                   <span>오류 네 건의 담당 팀을 정하고 별도 추적에 합의.</span>
-                  <a href="https://github.com/eoieiie/Invaders-SDP-23621/pull/74#pullrequestreview-5517094558">후속 결정 원문 ↗</a>
+                  <a class="evidence-link" href="assets/invaders/collab-decision.webp" target="_blank" rel="noopener">합의 내용 캡처 보기 ↗</a>
                 </figcaption>
               </figure>
             </div>
@@ -342,7 +335,6 @@
           data-state="캡스톤 개발 중"
           data-picture="assets/design-farm/exhibit.webp"
           data-alt="디자인팜의 시연 작품 세 점. 푸른 추상화, 3D 청동 조각, 황토빛 풍경화"
-          data-summary="작품을 실물 크기로 놓아 보는 3D · AR 전시 웹."
         >
           <div class="article-heading">
             <p>5인 캡스톤 · 개발 담당 · Three.js · WebXR</p>
@@ -363,16 +355,26 @@
               </figcaption>
             </figure>
             <div class="text-record">
-              <h3>5인 팀의 개발 전담</h3>
-              <p>작품의 실제 치수를 3D 배치에 연결. 이동·회전·크기 조절을 구현했습니다.</p>
-              <h3>가상 전시실에서 내 방까지</h3>
-              <p>WebXR로 수평면 탐지와 실물 크기 배치에 도전했습니다.</p>
+              <h3>개발 범위</h3>
+              <p>5인 팀 개발 담당. 실제 치수 기반 3D 위치·회전·크기 조절.</p>
+              <h3>AR 기능</h3>
+              <p>WebXR 수평면 탐지·실물 크기 배치.</p>
               <p class="verification">
-                <strong>다음 검증</strong> 데스크톱 3D·AR 미지원 안내 확인. 휴대폰 실제 배치 검증이 남아 있습니다.
+                <strong>검증 상태</strong> 휴대폰 AR 1차 테스트 완료. 크기·벽 인식 보완 후 재검증 필요.
               </p>
-              <a class="text-link" href="https://github.com/Black-Tiger-h/Design_Farm"
-                >프로젝트 GitHub <span aria-hidden="true">↗</span></a
-              >
+              <div class="server-access" aria-label="디자인팜 서버 주소와 운영시간">
+                <h3>데모 서버</h3>
+                <a class="server-url" href="https://design-farm.211-233-200-3.sslip.io/" target="_blank" rel="noopener">https://design-farm.211-233-200-3.sslip.io/ ↗</a>
+                <p class="server-cutoff">2026.11.16 00:00 자동 중단 설정 · 재개 일정 미확인</p>
+                <details class="server-hours">
+                  <summary>운영시간 (한국시간·중단 기한 전)</summary>
+                  <dl>
+                    <dt>월–금</dt><dd>08:45–11:25 · 15:35–16:35<br />23:15–다음 날 02:25</dd>
+                    <dt>화–토</dt><dd>06:05–07:05</dd>
+                  </dl>
+                  <p>보존된 운영 설정 기준. 11월 15일 운영시간 외 접속은 응답 시간 초과.</p>
+                </details>
+              </div>
             </div>
           </div>
           <p class="asset-note">작품·작가 정보는 AI 생성 시연 자료.</p>
@@ -426,7 +428,6 @@
           data-state="Play 비공개 테스트"
           data-picture="assets/sobok/keys.webp"
           data-alt="소복 키보드의 실제 목재 테마 한글 자판"
-          data-summary="손끝의 소리를 고르는 한글 키보드. Play 출시 전 비공개 테스트 중."
         >
           <div class="article-heading">
             <p>개인 앱 · Android · Google Play 비공개 테스트</p>
@@ -444,11 +445,11 @@
               <figcaption>안드로이드 실행 화면 · 목재 테마와 이모지 도구</figcaption>
             </figure>
             <div class="text-record">
-              <h3>직접 써 보고 찾은 불편</h3>
-              <p>첫 키보드 선택이 번거로웠습니다. 휴대폰 설치부터 직접 확인했습니다.</p>
-              <h3>타건음에도 음악은 계속</h3>
-              <p>다른 앱의 음악을 끊지 않도록 개선. 에뮬레이터에서 재생 유지를 확인했습니다.</p>
-              <p class="verification"><strong>출시를 향한 다음 단계</strong>Google Play 비공개 테스트로 입력·첫 설정을 점검 중.</p>
+              <h3>첫 설정 검수</h3>
+              <p>휴대폰에서 최초 키보드 선택 시 버튼을 두 번 눌러야 하는 문제 확인.</p>
+              <h3>오디오 처리</h3>
+              <p>타건음 재생 중 다른 앱의 음악 유지. 에뮬레이터 확인 완료.</p>
+              <p class="verification"><strong>테스트 상태</strong>Google Play 비공개 테스트 · 입력·첫 설정 점검 중.</p>
               <div class="sound">
                 <label for="snap">앱 타건음 듣기 <small>핑거 스냅 · 3타</small></label
                 ><audio

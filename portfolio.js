@@ -22,7 +22,6 @@ function showProject(key) {
   document.querySelector("#hero-status").textContent = info.state;
   document.querySelector("#hero-type").textContent = info.type;
   document.querySelector("#hero-title").textContent = selected.querySelector("h2").textContent;
-  document.querySelector("#hero-summary").textContent = info.summary;
   for (const card of cards) {
     if (card.dataset.key === key) card.setAttribute("aria-current", "true");
     else card.removeAttribute("aria-current");

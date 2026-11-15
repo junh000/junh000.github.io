@@ -462,6 +462,11 @@ figcaption {
   font-size: 12px;
   color: var(--muted);
 }
+.role-note {
+  padding-bottom: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
 .media-credit a {
   text-decoration: underline;
   text-underline-offset: 2px;
